@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    
+        
+      <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        #mainbar{
+            height: 150px;
+            width: 150px;
+            /* border: black 2px solid; */
+            margin: 50% 50%;
+        }
+        #bar{
+            height: 10px;
+            width: 150px;
+            border: black solid 2px;
+            
+
+        }
+        #text{
+            /* display: flex;
+            justify-content: center; */
+            text-align: center;
+        }
+        #box{
+            height: 10px;
+            width: 100%;
+            background-color:darkgreen;
+            animation-name: bounce;
+            animation-duration: 4s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 4s;
+            animation-iteration-count: infinite;
+            
+
+        }
+
+
+        @keyframes bounce {
+            0%{width: 0%;}
+            90%{width: 95%;}
+            95%{width: 60%;}
+            100%{width:100%;}
+            
+        }
+        
+
+        
+        
+
+      </style>
+       
+</head>
+<body >
+   <main>
+    <div id="mainbar">
+        <div id="text" class="main" >loading...</div>
+        <div id="bar" class="main"><div id="box"></div></div>
+    </div>
+   </main>
+</body>
+
+</html>
